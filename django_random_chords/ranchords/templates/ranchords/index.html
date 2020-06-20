@@ -1,17 +1,14 @@
 {% load static %}
 
 <link rel="stylesheet" type="text/css" href="{% static 'ranchords/style.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<h1>welcome to the html file, Ozz ;)</h1>
+<h1>Significantly improve your freedom on the guitar fretboard.</h1>
 
 <a href="funky_website">About</a>
 
 <form action="">
-    <h2>How many chords do you want?</h2>
-    <!-- <label for="number">Number Input</label>
-    <input id="number" type="number" name="number" step="1"> -->
-    <br>
-    <br>
+    <h3>How many chords do you want?</h3>
     <label for="range">Slider / Range</label>
     <span>8</span>
     <input id="range" type="range" name="range" step="1" min="8" max="24">
@@ -21,5 +18,7 @@
     <input type="submit" value="generate chords!">
 </form>
 
+<div class="chords-container">
 <h2>here are your {{ user_choice }} chords:</h2>
-<h2>{{ ranchords }}</h2>
+<h3 class="chords">{{ ranchords }}</h3>
+</div>

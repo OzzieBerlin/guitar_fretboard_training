@@ -1,7 +1,20 @@
-h1 {
-    font-family: Helvetica,
-    Arial,
+html,
+body {
+    font-family: 'Quicksand',
     sans-serif;
+    /* font-family: Helvetica,
+    Arial,
+    sans-serif; */
     font-size: large;
-    color: blue;
+    font-weight: 200;
+    margin: 5vh 5vw;
+}
+
+.chords-container {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.chords {
+    font-size: 3em;
 }
