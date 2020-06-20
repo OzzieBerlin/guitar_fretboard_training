@@ -4,6 +4,10 @@ import random
 
 # Create your views here.
 
+
+def funk(request):
+    return render(request, 'ranchords/funky_website.html')
+
 def home(request):
 
     notes = ["A", "B", "C", "D", "E", "F", "G"]
@@ -18,14 +22,9 @@ def home(request):
         return chord + accidental + chord_character
 
     num_of_chords = 12
+    user_choice = int(request.GET.get('range', 16))
 
-    for num in range(num_of_chords):
+    for num in range(user_choice):
         random_chords.append(get_random_chord(notes, accidentals, chord_characters))
 
-    return render(request, 'ranchords/index.html', {'ranchords': random_chords})
-
-def funk(request):
-    return HttpResponse('WHAT THE FUNK!!!')
-
-
-
+    return render(request, 'ranchords/index.html', {'ranchords': random_chords, 'num_chords': num_of_chords, 'user_choice': user_choice})

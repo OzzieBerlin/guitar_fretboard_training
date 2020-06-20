@@ -1,6 +1,3 @@
-# Directory:
-# /Users/Ozzie/Desktop/Python3/Projects/Random_Circles
-
 # Function of this project will be: Create random Chords to practice triads on the guitar. This way a practicing, advancing guitarist will become better very quick by getting better command of the guitar fretboard.
 # This project is intended for: My first own commit on Github, practicing code and putting knowledge into practice.
 
