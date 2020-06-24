@@ -4,4 +4,4 @@ I will use this repository to work on an app which will help guitar players to i
 
 Later on this web App should systematically help guitar player getting better with added features. 
 
-The purpose of this project is for me to learn software development. 
+The purpose of this project is for me to learn software development, more specifically, I am using Python and Django for Web Development.
