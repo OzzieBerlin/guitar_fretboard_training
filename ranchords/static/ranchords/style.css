@@ -2,9 +2,6 @@ html,
 body {
     font-family: 'Quicksand',
     sans-serif;
-    /* font-family: Helvetica,
-    Arial,
-    sans-serif; */
     font-size: large;
     font-weight: 200;
     margin: 5vh 5vw;
@@ -17,4 +14,25 @@ body {
 
 .chords {
     font-size: 3em;
+}
+
+.a-tag-button {
+    text-decoration: none;
+    padding: 0.5em 1em;
+    background-color: #9bc;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+}
+
+.form-button {
+    padding: 0.5em 1em;
+    background-color: #9bc;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    cursor: pointer;
 }

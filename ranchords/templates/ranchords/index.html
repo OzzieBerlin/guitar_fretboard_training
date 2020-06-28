@@ -3,22 +3,30 @@
 <link rel="stylesheet" type="text/css" href="{% static 'ranchords/style.css' %}">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<h1>Significantly improve your freedom on the guitar fretboard.</h1>
+<h1>Significantly improve your fretboard skills with random chords.</h1>
 
-<a href="funky_website">About</a>
+<!-- <a href="funky_website">Funky Website</a>  -->
 
-<form action="">
-    <h3>How many chords do you want?</h3>
-    <label for="range">Slider / Range</label>
+<form action="random_chords/">
+    <h3>Please choose your options!</h3>
+
+     <input id="accidentals" type="checkbox" name="accidentals">
+     <label for="accidentals">Include accidentals (b and #)</label>
+    <br>
+
+     <input id="chords-maj-min" type="checkbox" name="chords-maj-min">
+     <label for="chords-maj-min">Include major and minor chords</label>
+    <br>
+
+     <input id="chords-aug-dim" type="checkbox" name="chords-aug-dim">
+     <label for="chords-aug-dim">Include augmented and diminished chords</label>
+     <br>
+     <br>
+    <label for="range">number of chords:</label>
     <span>8</span>
     <input id="range" type="range" name="range" step="1" min="8" max="24">
     <span>24</span>
     <br>
     <br>
-    <input type="submit" value="generate chords!">
+    <input type="submit" class="form-button" value="generate chords!">
 </form>
-
-<div class="chords-container">
-<h2>here are your {{ user_choice }} chords:</h2>
-<h3 class="chords">{{ ranchords }}</h3>
-</div>
